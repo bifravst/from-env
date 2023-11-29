@@ -1,14 +1,17 @@
-import { fromEnv } from './fromEnv'
+import { fromEnv } from './fromEnv.js'
+import { describe, it } from 'node:test'
+import assert from 'node:assert/strict'
 
-describe('fromEnv()', () => {
-	it('should return environment variables if defined', () => {
+void describe('fromEnv()', () => {
+	void it('should return environment variables if defined', () => {
 		const env = { FOO: 'bar' }
-		expect(fromEnv({ foo: 'FOO' })(env)).toEqual({ foo: 'bar' })
+		assert.deepEqual(fromEnv({ foo: 'FOO' })(env), { foo: 'bar' })
 	})
-	it('should throw an error if the environment variable is not defined', () => {
+	void it('should throw an error if the environment variable is not defined', () => {
 		const env = {}
-		expect(() => fromEnv({ foo: 'FOO' })(env)).toThrow(
-			'FOO is not defined in environment!',
+		assert.throws(
+			() => fromEnv({ foo: 'FOO' })(env),
+			/FOO is not defined in environment!/,
 		)
 	})
 })
