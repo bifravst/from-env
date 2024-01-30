@@ -10,7 +10,7 @@
   },
   "scripts": {
     "test": "npx tsx --test ./src/*.spec.ts",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
@@ -34,7 +34,8 @@
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-import": "2.29.1",
     "eslint-plugin-prefer-arrow": "1.2.3",
-    "eslint-plugin-unicorn": "50.0.1"
+    "eslint-plugin-unicorn": "50.0.1",
+    "husky": "9.0.7"
   },
   "lint-staged": {
     "*.ts": [
