@@ -68,7 +68,6 @@
     "access": "public"
   },
   "files": [
-    "package-lock.json",
     "dist",
     "LICENSE",
     "README.md"
