@@ -1,5 +1,5 @@
 {
-  "name": "@nordicsemiconductor/from-env",
+  "name": "@bifravst/from-env",
   "version": "0.0.0-development",
   "description": "Helper function which ensures that required environment variables are set.",
   "type": "module",
@@ -14,12 +14,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NordicSemiconductor/from-env-js.git"
+    "url": "git+https://github.com/bifravst/from-env.git"
   },
   "bugs": {
-    "url": "https://github.com/NordicSemiconductor/from-env-js/issues"
+    "url": "https://github.com/bifravst/from-env/issues"
   },
-  "homepage": "https://github.com/NordicSemiconductor/from-env-js#readme",
+  "homepage": "https://github.com/bifravst/from-env#readme",
   "keywords": [
     "nrf-asset-tracker",
     "iot"
