@@ -1,4 +1,4 @@
-# fromEnv [![npm version](https://img.shields.io/npm/v/rsrp-bar/from-env.svg)](https://www.npmjs.com/package/rsrp-bar/from-env)
+# fromEnv [![npm version](https://img.shields.io/npm/v/@bifravst/from-env.svg)](https://www.npmjs.com/package/@bifravst/from-env)
 
 [![GitHub Actions](https://github.com/bifravst/from-env/workflows/Test%20and%20Release/badge.svg)](https://github.com/bifravst/from-env/actions)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
@@ -12,7 +12,7 @@ Helper function which ensures that required environment variables are set.
 ## Example
 
 ```typescript
-import { fromEnv } from "rsrp-bar/from-env";
+import { fromEnv } from "@bifravst/from-env";
 
 const { env } = fromEnv({
   env: "MY_ENV",
@@ -24,7 +24,7 @@ This will throw an exception if `MY_ENV` is not set on `process.env`. Otherwise,
 
 ## Installation
 
-    npm i --save-dev --save-exact rsrp-bar/from-env
+    npm i --save-dev --save-exact @bifravst/from-env
 
 ## Usage
 
