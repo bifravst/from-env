@@ -31,7 +31,9 @@
     "@bifravst/prettier-config": "1.0.4",
     "@commitlint/config-conventional": "19.2.2",
     "@types/node": "20.14.10",
+    "cat": "*",
     "husky": "9.0.11",
+    "package.json": "*",
     "tsx": "4.16.2"
   },
   "lint-staged": {
@@ -73,5 +75,9 @@
     "LICENSE",
     "README.md"
   ],
-  "prettier": "@bifravst/prettier-config"
+  "prettier": "@bifravst/prettier-config",
+  "peerDependencies": {
+    "cat": "^0.2.0",
+    "package.json": "^2.0.1"
+  }
 }
