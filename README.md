@@ -32,8 +32,8 @@ See [`fromEnv.spec.ts`](./src/fromEnv.spec.ts).
 
 ## Node & NPM
 
-This project requires Node.js `>=22` and npm `>=12.0.2 <13` (enforced via
-`check-node-version` on `npm install` and `npm ci`).
+This project requires Node.js `>=24.19.0 <25` and npm `>=12.0.2 <13` (enforced
+via `check-node-version` on `npm install` and `npm ci`).
 
 The check is skipped during `npm publish` and `npm pack`, because
 `semantic-release` bundles its own npm (`@semantic-release/npm` depends on

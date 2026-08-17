@@ -1,1 +1,1 @@
-export * from './fromEnv.js'
+export * from './fromEnv.ts'
