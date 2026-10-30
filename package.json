@@ -9,7 +9,7 @@
     "types": "./dist/index.d.ts"
   },
   "scripts": {
-    "test": "node --no-warnings --experimental-transform-types --test ./src/*.spec.ts",
+    "test": "node --no-warnings --test ./src/*.spec.ts",
     "prepare": "husky && case \"$npm_command\" in install|ci) check-node-version --package ;; esac",
     "prepublishOnly": "npx tsc --noEmit false"
   },
@@ -48,7 +48,7 @@
     ]
   },
   "engines": {
-    "node": ">=24.19.0 <25",
+    "node": ">=24.22.1 <25 || >=26.12.1 <27",
     "npm": ">=12.0.2 <13"
   },
   "release": {
